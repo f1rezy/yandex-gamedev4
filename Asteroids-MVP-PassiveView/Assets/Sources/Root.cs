@@ -26,7 +26,7 @@ public class Root : MonoBehaviour
 
     private void Awake()
     {
-        _shipModel = new Ship(new Vector2(0.5f, 0.5f), 0);
+        _shipModel = new Ship(new Vector2(0.5f, 0.5f), 0, 3);
 
         _baseGun = new DefaultGun(_shipModel);
         _laserGun = new LaserGun(_shipModel, 10);
